@@ -8,32 +8,32 @@ nameTags:
   staffer:
     permission: nametag.staffer
     displayGroups:
-      - lines:
-          - text: "%luckperms_prefix% %essentials_nickname% %luckperms_suffix%"
-        background:
-          enabled: false
-          color: 255,0,0
-          opacity: 255
-          shadowed: true
-          seeThrough: false
-        scale: 1.0
-        yOffset: 0.20000000298023224
-        relationalConditions: false
+    - lines:
+      - text: '%luckperms_prefix%%essentials_nickname%%luckperms_suffix%'
+      background:
+        enabled: true
+        color: 0,0,0
+        opacity: 64
+        shadowed: false
+        seeThrough: true
+      scale: 1.0
+      yOffset: 0
+      relationalConditions: false
   default:
     permission: nametag.default
     displayGroups:
-      - lines:
-          - text: "%luckperms_prefix% %essentials_nickname% %luckperms_suffix%"
-        background:
-          enabled: false
-          color: 255,0,0
-          opacity: 255
-          shadowed: true
-          seeThrough: false
-        scale: 1.0
-        yOffset: 0.20000000298023224
-        when: "%player_health% > 10"
-        relationalConditions: false
+    - lines:
+      - text: '%luckperms_prefix%%essentials_nickname%%luckperms_suffix%'
+      background:
+        enabled: true
+        color: 0,0,0
+        opacity: 64
+        shadowed: false
+        seeThrough: true
+      scale: 1.0
+      yOffset: 0
+      when: '%player_health% > 10'
+      relationalConditions: false
 # Reusable glow animation presets. Reference from displayGroups via glow.type: reference.
 # Built-in ids: rainbow, gradient, gold_pulse (custom handler registered by the plugin).
 glowAnimations:
@@ -48,9 +48,9 @@ glowAnimations:
     speed: 1.0
     customProperties: {}
     colors:
-      - "#FF5555"
-      - "#55FF55"
-      - "#5555FF"
+    - '#FF5555'
+    - '#55FF55'
+    - '#5555FF'
     refreshInterval: 10
   gold_pulse:
     type: custom
@@ -81,8 +81,8 @@ behavior:
   forceDisableDefaultNameTag: false
   # The default billboard constraints for the nametag (CENTER, HORIZONTAL, VERTICAL, FIXED).
   defaultBillboard: CENTER
-  # Which text formatter to use (MINIMESSAGE, MINEDOWN, LEGACY or UNIVERSAL).
-  # UNIVERSAL is the most resource intensive but supports all formatting options (except MINEDOWN).
+  # Which text formatter to use (MINIMESSAGE, MINEDOWN, LEGACY or UNIVERSAL). 
+  # UNIVERSAL is the most resource intensive but supports all formatting options (except MINEDOWN). 
   # (&x&0&8&4&c&f&bc LEGACY OF LEGACY - &#084cfbc LEGACY - &#084cfbc& MINEDOWN - <color:#084cfbc> MINIMESSAGE)
   format: MINIMESSAGE
   # Remove empty lines from nametag display.
@@ -141,10 +141,10 @@ performance:
     curve: 2.0
 # Match PAPI output strings. Quote reserved YAML 1.1 words: use placeholder: "Yes" not Yes (otherwise they become booleans).
 placeholdersReplacements:
-  "%advancedvanish_is_vanished%":
-    - placeholder: Yes
-      replacement: " &7[V]&r"
-    - placeholder: No
-      replacement: ""
+  '%advancedvanish_is_vanished%':
+  - placeholder: Yes
+    replacement: ' &7[V]&r'
+  - placeholder: No
+    replacement: ''
 
 # Authors: AlexDev_
