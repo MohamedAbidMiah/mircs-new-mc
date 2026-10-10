@@ -39,7 +39,8 @@ x-modrinth-projects: &modrinth-projects "paper:luckperms,\
   paper:viabackwards"
 
 x-spiget-resources: &spiget-resources "34315,\
-  19254"
+  19254,\
+  69605"
 services:
   # ==========================================
   # DATABASE (MySQL / MariaDB)
