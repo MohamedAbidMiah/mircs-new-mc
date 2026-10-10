@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/MohamedAbidMiah/Apathy-RP/compare/v1.5.0...v1.6.0) (2026-10-10)
+
+
+### Features
+
+* **temp:** Death message ([#37](https://github.com/MohamedAbidMiah/Apathy-RP/issues/37)) ([d128bc1](https://github.com/MohamedAbidMiah/Apathy-RP/commit/d128bc1ff865510f5a67166856471e284eb7642b))
+
 ## [1.5.0](https://github.com/MohamedAbidMiah/Apathy-RP/compare/v1.4.2...v1.5.0) (2026-10-09)
 
 
